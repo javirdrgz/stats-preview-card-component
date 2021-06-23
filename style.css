@@ -23,13 +23,13 @@ body {
   height: 100vh;
 }
 
-h1 {
+h2 {
   font-size: 1.5em;
   margin-top: 1.5em;
   margin-bottom: .5em;
 }
 
-h1 span {
+h2 span {
   color: var(--soft-violet);
 }
 
@@ -46,14 +46,14 @@ section {
   padding: 0 1.5em;
 }
 
-picture {
+.image {
   position: relative;
   background-image: url('./images/image-header-desktop.jpg');
   background-size: cover;
   height: 30vh;
 }
 
-picture::before {
+.image::before {
   content: '';
   position: absolute;
   left: 0;
@@ -63,7 +63,7 @@ picture::before {
   opacity: 0.5;
 }
 
-picture, picture::before {
+.image, .image::before {
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
 }
@@ -95,7 +95,7 @@ p {
 
 @media (min-width: 700px) {
 
-  h1 {
+  h2 {
     font-size: 2em;
     margin-top: 1em;
   }
@@ -121,7 +121,7 @@ p {
     margin-right: 4em;
   }
 
-  picture, picture::before {
+  .image, .image::before {
     flex: 1 0 50%;
     height: 100%;
     border-radius: 0;
